@@ -35,7 +35,7 @@ Function.prototype.constructor = function(a){
 ```js
 (function(){
     'use strict';
-    val cookieTemp = '';
+    var cookieTemp = '';
     Object.defineProperty(window, 'cookie', {
         set:function(val){
             console.log("cookie设置位置：", val);
@@ -47,8 +47,7 @@ Function.prototype.constructor = function(a){
             return cookieTemp;
         }
     }
-}
-)()
+})()
 ```
 
 
