@@ -11,6 +11,17 @@ function eval(a){
 	}
 }
 ```
+## Function hook
+```js
+var function_ = Function;
+Function = function(func){
+				if(func.toString().includes('bugger')){
+					return function(){};
+				}else{
+					return function_(func);
+				}
+			}
+```
 ## setInterval定时器hook
 ```js
 // 针对定时器的回调函数中存在bugger字符，根据具体情况改写
