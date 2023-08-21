@@ -34,7 +34,7 @@ if __name__ == '__main__':
     sign = md5.hexdigest()
 
     data = {
-        'i': 'china',
+        'i': 'assert',
         'from': 'auto',
         'to': '',
         'domain': '0',

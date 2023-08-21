@@ -9,6 +9,7 @@ def hex_hash(data):
 
 def ase_decrpyt(key, iv, data):
     data_hex = a2b_hex(data)
+    print(data_hex)
     aes = AES.new(key, AES.MODE_CBC, iv)
     return aes.decrypt(data_hex).decode()
 
